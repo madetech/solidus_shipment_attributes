@@ -5,13 +5,13 @@ require 'solidus_shipment_attributes/version'
 Gem::Specification.new do |s|
   s.name        = 'solidus_shipment_attributes'
   s.version     = SolidusShipmentAttributes::VERSION
-  s.summary     = 'TODO'
-  s.description = 'TODO'
+  s.summary     = 'Add extra attributes to shipment'
+  s.description = s.summary
   s.license     = 'BSD-3-Clause'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.example.com'
+  s.author    = 'Seb Ashton'
+  s.email     = 'seb@madetech.com'
+  s.homepage  = 'https://www.madetech.com'
 
   s.files = Dir["{app,config,db,lib}/**/*", 'LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
