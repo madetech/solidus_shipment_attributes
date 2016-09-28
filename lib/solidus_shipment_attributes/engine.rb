@@ -13,6 +13,8 @@ module SolidusShipmentAttributes
         Spree::ShippingMethod.include(SolidusShipmentAttributes::ShipmentMethodAttributes)
       end
 
+      Spree::ShippingRate.include(SolidusShipmentAttributes::ShippingRateAttributes)
+
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/overrides/*.rb')) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
