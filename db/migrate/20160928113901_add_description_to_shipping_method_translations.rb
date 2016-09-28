@@ -4,7 +4,7 @@ class AddDescriptionToShippingMethodTranslations < ActiveRecord::Migration
 
     reversible do |dir|
       dir.up do
-        Spree::ShippingMethod.add_translation_fields! description: :string
+        Spree::ShippingMethod.add_translation_fields! description: :text
       end
 
       dir.down do
